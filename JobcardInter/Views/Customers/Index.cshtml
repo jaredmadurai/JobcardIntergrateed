@@ -1,0 +1,95 @@
+﻿@model IEnumerable<JobcardInter.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer_email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Industry)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact_Number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaintenanceContract)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContractDuration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ServicesPerMonth)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Customer_email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Industry)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contact_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contact_Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contact_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaintenanceContract)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContractDuration)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServicesPerMonth)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CustomerID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CustomerID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CustomerID })
+        </td>
+    </tr>
+    <br />
+    @Html.ActionLink("Back to dashboard ", "MainHome", "Dash")
+}
+
+</table>

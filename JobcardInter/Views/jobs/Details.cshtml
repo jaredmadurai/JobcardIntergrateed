@@ -1,0 +1,354 @@
+﻿@model JobcardInter.Models.job
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>job</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClientReference)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClientReference)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactPerson)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactPerson)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telephone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telephone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SiteLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DoorType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoorType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Service)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Service)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Callout)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Callout)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Installation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Installation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Supply)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Supply)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WCO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WCO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArrivalA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArrivalA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartureA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepartureA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Travelling)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Travelling)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Km)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Km)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuanityA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuanityA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalQA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalQA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuanityB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuanityB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalQB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalQB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuanityC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuanityC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalQC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalQC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuanityD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuanityD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalQE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalQE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubTotal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GrandTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GrandTotal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Technican)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Technican)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCompleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateCompleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Signature)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Signature)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Designation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Designation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dater)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dater)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SignatureB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SignatureB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.JobID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

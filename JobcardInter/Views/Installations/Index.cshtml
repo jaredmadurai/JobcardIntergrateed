@@ -1,0 +1,458 @@
+﻿@model IEnumerable<JobcardInter.Models.Installation>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<br/>
+@Html.ActionLink("Add an Area ", "Index", "Areas")
+<br />
+<table class="table">
+
+    @foreach (var item in Model)
+    {
+
+
+        <tr>
+
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientName)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientName)
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchName)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchName)
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchNo)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchNo)
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+        </tr>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Store_Manager)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Store_Manager)
+            </td>
+        </tr>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Tel)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tel)
+            </td>
+        </tr>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Fax)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fax)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Antennas)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Antennas)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Serial)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Serial)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Mental_Detector)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mental_Detector)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Remote)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Remote)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Enterance1)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Enterance1)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Distance1)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Distance1)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Enterance2)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Enterance2)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Distance2)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Distance2)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Enterance3)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Enterance3)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Distance3)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Distance3)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Enterance4)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Enterance4)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Distance4)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Distance4)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Q1)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q1)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Make)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Make)
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Lockable)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lockable)
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Q2)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q2)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Strength)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Strength)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TQ1)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TQ1)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TType1)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TType1)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TQ2)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TQ2)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TType2)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TType2)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TQ3)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TQ3)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TType3)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TType3)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TQ4)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TQ4)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TType4)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TType4)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cable)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cable)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Grouting)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grouting)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PPU)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.PPU)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PPA)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.PPA)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Power_Points)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Power_Points)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DB_Labelled)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.DB_Labelled)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Comments1)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments1)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Completion)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Completion)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SinedC)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.SinedC)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SignedD)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.SignedD)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Screen_Shots)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Screen_Shots)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Staff_Training_Conduct)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Staff_Training_Conduct)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Comment2)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment2)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Signature)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Signature)
+            </td>
+        </tr>
+
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Place)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Place)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+        </tr>
+        <th></th>
+
+
+
+
+
+        <th>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ReportID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ReportID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ReportID })
+        </th>
+        </tr>
+        <br />
+        @Html.ActionLink("Back to dashboard ", "MainHome", "Dash")
+    }
+
+</table>

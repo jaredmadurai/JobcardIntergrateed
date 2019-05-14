@@ -1,0 +1,286 @@
+﻿@model IEnumerable<JobcardInter.Models.job>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+    &nbsp;&nbsp;
+    @Html.ActionLink("Print Record", "GetAll")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientReference)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactPerson)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telephone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SiteLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoorType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Service)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Callout)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Installation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Supply)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WCO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Reason)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArrivalA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DepartureA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Travelling)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Km)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuanityA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalQA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuanityB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalQB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuanityC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalQC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuanityD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalQE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubTotal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Vat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GrandTotal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Technican)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateCompleted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Signature)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Designation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dater)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SignatureB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name1)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientReference)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Client)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactPerson)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telephone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SiteLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoorType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Service)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Callout)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Installation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Supply)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WCO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Reason)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArrivalA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepartureA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Travelling)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Km)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuanityA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalQA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuanityB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalQB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuanityC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalQC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuanityD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalQE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GrandTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Technican)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateCompleted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Signature)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Designation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dater)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SignatureB)
+            </td>
+            <td>
+
+                <img style="height:100px;" src="~/Content/data/@Html.DisplayFor(modelItem => item.Name1)" />
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.JobID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.JobID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.JobID })
+            </td>
+        </tr>
+        <br />
+        @Html.ActionLink("Back to dashboard ", "MainHome", "Dash")
+    }
+
+</table>

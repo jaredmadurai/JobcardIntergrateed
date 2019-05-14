@@ -1,0 +1,426 @@
+﻿@model JobcardInter.Models.Installation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Installation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BranchName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BranchName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BranchNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BranchNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Store_Manager)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Store_Manager)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Antennas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Antennas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Serial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Serial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mental_Detector)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mental_Detector)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remote)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remote)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Enterance1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enterance1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Distance1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Distance1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Enterance2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enterance2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Distance2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Distance2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Enterance3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enterance3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Distance3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Distance3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Enterance4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enterance4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Distance4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Distance4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Q1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Q1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Make)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Make)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lockable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lockable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Q2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Q2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Strength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Strength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TQ1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TQ1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TType1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TType1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TQ2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TQ2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TType2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TType2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TQ3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TQ3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TType3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TType3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TQ4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TQ4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TType4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TType4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Grouting)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Grouting)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PPU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PPU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PPA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PPA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Power_Points)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Power_Points)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DB_Labelled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DB_Labelled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comments1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Completion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Completion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SinedC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SinedC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SignedD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SignedD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Screen_Shots)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Screen_Shots)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Staff_Training_Conduct)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Staff_Training_Conduct)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Signature)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Signature)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Place)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Place)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReportID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
